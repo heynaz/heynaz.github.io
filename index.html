@@ -1,586 +1,310 @@
-<!-------------------------------------------------------------------------
-
-     .d88888b.   .d8888b.  8888888b.  8888888b.  8888888888 Y88b   d88P 
-    d88P" "Y88b d88P  Y88b 888   Y88b 888   Y88b 888         Y88b d88P  
-    888     888 Y88b.      888    888 888    888 888          Y88o88P   
-    888     888  "Y888b.   888   d88P 888   d88P 8888888       Y888P    
-    888     888     "Y88b. 8888888P"  8888888P"  888            888     
-    888     888       "888 888        888 T88b   888            888     
-    Y88b. .d88P Y88b  d88P 888        888  T88b  888            888     
-     "Y88888P"   "Y8888P"  888        888   T88b 8888888888     888     
-                                                                                                                                                                                                                                                                                                                                                                                                                
-   THEME BY JAMES, UPDATED JUNE 2013 - HTTP://THEMESBYJAMES.TUMBLR.COM
-              CREDIT TO: MODERNISE FOR POST PERMALINKS
-                 
--------------------------------------------------------------------------->
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><html><head>
-
-<title>{title}</title>
-<meta name="description" content="{MetaDescription}" />
-<link rel="shortcut icon" href="{Favicon}">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}" />
-<meta name="viewport" content="width=1220" />
-
-<!-- DEFAULT VARIABLES -->
-<meta name="color:Background" content="#FFFFFF" />
-<meta name="color:Center" content="#FFFFFF" />
-<meta name="color:Text" content="#000000" />
-<meta name="color:Link" content="#5c5c5c"/>
-<meta name="color:Link Hover" content="#999" />
-<meta name="color:Blog Title" content="#5c5c5c" />
-<meta name="color:Scrollbar" content="#7e817e"/>
-<meta name="image:Background" content="" />
-<meta name="image:Sidebar" content="" />
-<meta name="if:2 Columns" content="0"/>
-<meta name="if:3 Columns" content="1"/>
-<meta name="if:Larger 7th photo" content="1" />
-<meta name="if:Larger 14th photo" content="0" />
-<meta name="if:Rounded Photos" content="0"/>
-<meta name="if:Show Blog Title" content="1"/>
-<meta name="if:Blog Title A" content="1"/>
-<meta name="if:Blog Title B" content="0"/>
-<meta name="if:Blog Title C" content="0"/>
-<meta name="if:Photo Permalinks 1" content="0"/>
-<meta name="if:Photo Permalinks 2" content="1"/>
-<meta name="if:Post Shadow" content="0"/>
-<meta name="text:Ask Title" content="Message" />
-<meta name="text:Link One" content="" />
-<meta name="text:Link One Title" content="" />
-<meta name="text:Link Two" content="" />
-<meta name="text:Link Two Title" content="" />
-<meta name="text:Link Three" content="" />
-<meta name="text:Link Three Title" content="" />
-<meta name="text:Link Four" content="" />
-<meta name="text:link Four Title" content="" />
-<meta name="text:link Five" content="" />
-<meta name="text:link Five Title" content="" />
-<!---   STYLESHEETS & STATIC UPLOADS   --->
-<link href="http://static.tumblr.com/ek9ly4s/emomovvhc/animate-custom.css" rel="stylesheet">
-<script type="text/javascript"
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Ubuntu|Open+Sans|Lekton|Pacifico|Gloria+Hallelujah' rel='stylesheet' type='text/css'>
-
-<script src="http://static.tumblr.com/6jwx45k/qnrmqhe43/ifie1.js"></script>
-<script src="http://static.tumblr.com/6jwx45k/QcKmqhe47/ifie2.js"></script>
-
-<style type="text/css">
-html{
-margin-left:35px;
-cursor:crosshair;
-height:103%;}
-
-body, p {
-font-family:Ubuntu;
-font-size:12px;
-font-style: normal;
-padding: 0px;
-margin: 0px;
-color:{color:text};}
-
-body {
-cursor:crosshair;
-background-color:{color:background};
-background-image:url({image:Background});
-background-attachment: fixed;
-background-repeat: repeat;}
-
-a {
-text-decoration:none;
-color:{color:text};
--webkit-transition: all 0.4s linear;
--moz-transition: all 0.4s linear;
-transition: all 0.4s linear;}
-
-a:link, a:active, a:visited{
-color: {color:Link};
-text-decoration: none;
--webkit-transition: all 0.6s ease-out;-moz-transition: all 0.6s ease-out;-o-transition: all   0.6s ease-out;transition: all 0.6s ease-out;}
-
-a:hover{
-color:{color:link hover};}
-
-img {{block:ifRoundedPhotos}border-radius:5px;{/block:ifroundedphotos}}
-img:hover{opacity:1.0;-webkit-transition: all 0.6s ease-out;-moz-transition: all 0.6s ease-out;-o-transition: all   0.6s ease-out;transition: all 0.6s ease-out;cursor:crosshair;}
-
-#wrapper {
-position: relative;
-width: 100%;
-text-align: center;}
-
-.clear {
-text-align:left;clear: both;}
-
-#entry.masonry-brick {
-top: 0 !important;
-left: 0 !important;}
-
-#infscr-loading {
-position: absolute!important;
-width: 16px!important;
-height: 11px!important;
-bottom: 0px!important;
-left: 48.5%!important;
-margin-top: 10px!important;
-margin-bottom: 5px!important;}
-
-.supreme{text-align:right;margin-top:10px;}
-
-.title{
-text-align:center;
-font-size:14px;
-line-height:16px;}
-
-blockquote{
-padding:0px 0px 2px 1px;
-margin:0px 0px 2px 1px;
-border-left: 1px dotted #555555;}
-
-.blogtitle{font-size:40px;line-height:40px;text-align:center;letter-spacing:1px;
-padding-top:3px;
-{block:ifBlogTitleA}font-family:Pacifico;padding-bottom:13px;{/block:ifBlogTitleA}
-{block:ifBlogTitleB}font-family:courier new;letter-spacing:3px;
-text-transform:uppercase;;{/block:ifBlogTitleB}
-{block:ifBlogTitleC}font-family:'Gloria Hallelujah', cursive;padding-bottom:8px;{/block:ifBlogTitleC}}
-
-
-.blogtitle a{color:{color:Blog Title};text-transfrom:uppercase;}
-.description{font-size:12px;margin-top:28px;text-align:left;}
-
-#content{margin:auto;position:relative;
-{block:IndexPage}
-{block:if2Columns}width:520px;{/block:if2Columns}
-{block:if3Columns}width:744px;{/block:if3Columns}
-{/block:IndexPage}
-{block:PermalinkPage}width:500px;{/block:PermalinkPage}}
-
-.sidebar{width:240px;background-color:{color:center};
-padding:2px;
-margin-left:-255px;
-position:fixed;
-z-index:100;
-margin-top:70px;
-font-size:12px;}
-
-{block:ifphotopermalinks1}
-.permalinks{position:absolute;bottom:5px;left:-33px;opacity: 0;-webkit-transition: all 0.3s linear;
--webkit-transition: all 0.3s linear;
--moz-transition: all 0.3s linear;
-transition: all 0.3s linear;}
-.entry:hover .permalinks{opacity:.9;-webkit-transition: all 0.3s linear;
--webkit-transition: all 0.3s linear;
--moz-transition: all 0.3s linear;
-transition: all 0.3s linear;}
-.buttons {list-style: none;}
-.buttons li {float: left;border-radius: 3px;padding:7px;height:15px;width:15px;background-color:white;}
-.buttons li:first-child{margin-right:5px;}
-.noteslabel{margin-left:5px; float: left;border-radius: 3px;padding:7px;height:15px;line-height:17px;background-color:white;}.noteslabel a{color:gray;}
-{/block:ifphotopermalinks1}
-
-{block:ifphotopermalinks2}
-.reblog_me{
-overflow:hidden;
-display:block;
-position:absolute;
-top:-10px;
-right:2px;
-list-style: none;
-opacity:0;
--webkit-transition: all 0.3s linear;
--webkit-transition: all 0.3s linear;
--moz-transition: all 0.3s linear;
-transition: all 0.3s linear;
-cursor:crosshair;}
-.entry:hover .reblog_me{
-right:2px;
-overflow:hidden;
-opacity:1.0;
--webkit-transition: all 0.3s linear;
--webkit-transition: all 0.3s linear;
--moz-transition: all 0.3s linear;
-transition: all 0.3s linear;
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
 }
 
-.reblog_me li{
-float: left;
-background-color:white;
-padding:10px;
-height:20px;
-width:20px;
-cursor:crosshair;
--webkit-transition: all 0.3s linear;
--webkit-transition: all 0.3s linear;
--moz-transition: all 0.3s linear;
-transition: all 0.3s linear;}{/block:ifphotopermalinks2}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-.entry{
-margin:5px;
-padding:2px 2px 0px 2px;
-background-color:color:center;
-{block:IndexPage}
-{block:IfPostShadow}
--webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, .3);
--moz-box-shadow:  0px 0px 4px rgba(0, 0, 0, .3);
-box-shadow: 0px 0px 4px  rgba(0, 0, 0, .3);
-{/block:IfPostShadow}
-overflow:hidden;
-{/block:IndexPage}
-{block:PermalinkPage}
-margin-left:25px;
-width:450px;
-height:auto;
-{/block:PermalinkPage}}
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('/w3images/parallax1.jpg');
+    min-height: 100%;
+}
 
-.photo{width:230px;height:auto;background-color:{color:center};padding:2.2px 2px 0px 2px;margin-bottom:-.5px;}
-.photo img{width:230px; -webkit-transition: 0.3s ease-in;{block:ifRoundedPhotos}border-radius:5px;{/block:ifroundedPhotos}}
-.photo img:hover{-webkit-transition: 0.3s ease-in;}
-.photobig{width:477px;background-color:{color:center};padding:2px 2px 0px 2px;margin-bottom:-1px;}
-.photobig img{width:477px;height:auto}
-.text{width:232px;background-color:{color:center};{block:indexpage}border: 1px solid #ccc;{/block:indexpage}{block:permalinkpage}width:400px;{/block:permalinkpage}}
-.photoset{width:230px;overflow:hidden;padding:2px 2px 0px 2px;margin-bottom:-1px;
-background-color:{color:center};}
-text{width:232px;background-color:{color:center};{block:permalinkpage}width:400px;{/block:permalinkpage}}
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("/w3images/parallax2.jpg");
+    min-height: 400px;
+}
 
-/*  SCROLL BAR APPEARANCE  */
-::-webkit-scrollbar-thumb:vertical {
-background-color:{color:scrollbar};
-height:10px;width:10px;opacity:1;
--webkit-border-radius:0px;border:3px {color:background} solid;}
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/w3images/parallax3.jpg");
+    min-height: 400px;
+}
 
-::-webkit-scrollbar-thumb:horizontal {
-background-color:#4c4f50;opacity:1;
-height:10px !important;border:3px {color:background} solid;
--webkit-border-radius:0px;}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
 
-::-webkit-scrollbar {
-height:10px;
-width:10px;
-background-color:{color:background};
--webkit-border-radius:0px;}
-
-::-webkit-scrollbar-corner {
-background-color:{color:background};}
-
-::-webkit-resizer {
-background-color:{color:background};}
-.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.clearfix{display:inline-block}html[xmlns] .clearfix{display:block}* html .clearfix{height:1%}
-.tumblrAutoPager_page_info,
-.tumblrAutoPager_page_separator {display:none;}
-
-
-.nav{text-transform:lowercase;top:10px;text-align:center;display:block;}
-{CustomCSS}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
 </style>
+<body>
 
-<!-- INFINTE SCROLL SCRIPT -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://static.tumblr.com/ek9ly4s/M6Zmozr72/infintescroll3-1.js"></script>
-<script type="text/javascript" src="http://static.tumblr.com/j1tjexd/WYwm8ed44/like_script.js"></script>
-<script type="text/javascript">
-$(window).load(function () {
-var $content = $('#content');
-$content.masonry({itemSelector: '.entry', columnWidth:248
-});
-$content.infinitescroll({
-navSelector : 'div#pagination',
-nextSelector : 'div#pagination a#nextPage',
-itemSelector : '.entry',
-loading: {/*Loading...*/
-finishedMsg: '',
-img: 'http://static.tumblr.com/dbek3sy/pX1lrx8xv/ajax-loader.gif'
-},
-bufferPx :600,
-debug : false,
-},
-// call masonry as a callback.
-function( newElements ) {
-window.n = window.n || 0;
-Tumblr.LikeButton.get_status_by_page(++window.n);
-var $newElems = $( newElements );
-$newElems.hide();
-// ensure that images load before adding to masonry layout
-$newElems.imagesLoaded(function(){
-$content.masonry( 'appended', $newElems, true, function(){$newElems.fadeIn(1500);} );
-});
-});
-});
-</script>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
 
-{block:IndexPage}
-{block:Pagination}
-<div id="pagination">
-{block:NextPage}
-<a id="nextPage" href="{NextPage}"></a>
-{/block:NextPage}
-{block:PreviousPage}
-<a href="{PreviousPage}"></a>
-{/block:PreviousPage}
-</div>
-{/block:Pagination}
-{/block:IndexPage}
-</head><body>
-
-<div id="content" class="infinite-scroll">
-<div class="sidebar">
-<center>
-
-{block:ifshowblogtitle}<div class="blogtitle">
-<a href="/">{title}</a>
-</div>{/block:ifshowblogtitle}
-
-{block:ifsidebarimage}<center><a href="/"><img src="{image:sidebar}" style="width:100%;" class="img"></a></center>{/block:ifsidebarimage}
-<p>{description}</p>
-
-<span class="nav">
-<a href="/">Home</a>&nbsp;
-{block:AskEnabled}<a href="/ask">{text:ask title}</a>&nbsp;{/block:AskEnabled}
-{block:ifLinkOneTitle}
-<a href="{text:Link One}">{text:Link One Title}</a>&nbsp;{/block:ifLinkOneTitle}
-{block:ifLinkTwoTitle}
-<a href="{text:Link Two}">{text:Link Two Title}</a>&nbsp;{/block:ifLinkTwoTitle}
-{block:ifLinkThreeTitle}
-<a href="{text:Link Three}">{text:Link Three Title}</a>&nbsp;{/block:ifLinkThreeTitle}
-{block:ifLinkFourTitle}
-<a href="{text:Link Four}">{text:Link Four Title}</a>&nbsp;{/block:ifLinkFourTitle}
-{block:ifLinkFiveTitle}
-<a href="{text:Link Five}">{text:Link Five Title}</a>&nbsp;{/block:ifLinkFiveTitle}
-{block:ifLinkSixTitle}
-<a href="{text:Link Six}">{text:Link Six Title}</a>&nbsp;{/block:ifLinkSixTitle}
-{block:ifLinkSevenTitle}
-<a href="{text:Link Seven}">{text:Link Seven Title}</a>&nbsp;{/block:ifLinkSevenTitle}
-{block:ifLinkEightTitle}
-<a href="{text:Link Eight}">{text:Link Eight Title}&nbsp;{/block:ifLinkEightTitle}
-{block:HasPages}{block:Pages}<a href="{URL}">{Label}</a>&nbsp;{/block:Pages} {/block:HasPages}
-<a href="/archive">Archive</a>&nbsp;
-<!-- DO NOT REMOVE CREDITS KEEP MY THEMES FREE -->
-<a href="http://final-stand.tumblr.com" target="blank">Theme</a></center>
-</span>
-<div style="margin-top:3px;"></div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
 </div>
 
-{block:Posts}
-<div class = "autopagerize_page_element" >
-<div class="entry">
-
-{block:Photo}
-{block:IndexPage}
-{block:Post1}
-<div class="photo">{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoUrl-500}" alt="{PhotoAlt}"/> </a>{LinkCloseTag}</div>
-{/block:Post1}
-{block:Post2}
-<div class="photo">{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/> </a>{LinkCloseTag}</div>
-{/block:Post2}
-{block:Post3}
-<div class="photo">{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/> </a>{LinkCloseTag}</div>
-{/block:Post3}
-{block:Post4}
-<div class="photo">{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/> </a>{LinkCloseTag}</div>
-{/block:Post4}
-{block:Post5}
-<div class="photo">{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/> </a>{LinkCloseTag}</div>
-{/block:Post5}
-{block:Post6}
-<div class="photo">{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/> </a>{LinkCloseTag}</div>
-{/block:Post6}
-{block:Post7}
-{block:ifLarger7thphoto}<div class="photobig">{/block:ifLarger7thphoto}
-{block:ifnotLarger7thphoto}<div class="photo">{/block:ifnotLarger7thphoto}
-{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/> </a>{LinkCloseTag}</div>
-{/block:Post7}
-{block:Post8}
-<div class="photo">{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/> </a>{LinkCloseTag}</div>
-{/block:Post8}
-{block:Post9}
-<div class="photo">{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/> </a>{LinkCloseTag}</div>
-{/block:Post9}
-{block:Post10}
-<div class="photo">{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/> </a>{LinkCloseTag}</div>
-{/block:Post10}
-{block:Post11}
-<div class="photo">{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/> </a>{LinkCloseTag}</div>
-{/block:Post11}
-{block:Post12}
-<div class="photo">{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/> </a>{LinkCloseTag}</div>
-{/block:Post12}
-{block:Post13}
-<div class="photo">{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/> </a>{LinkCloseTag}</div>
-{/block:Post13}
-{block:Post14}
-{block:ifLarger14thphoto}<div class="photobig">{/block:ifLarger14thphoto}
-{block:ifnotLarger14thphoto}<div class="photo">{/block:ifnotLarger14thphoto}
-{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/> </a>{LinkCloseTag}</div>
-{/block:Post14}
-{block:Post15}
-<div class="photo">{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/> </a>{LinkCloseTag}</div>
-{/block:Post15}
-
-{/block:IndexPage}
-{block:PermalinkPage}{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"width=450px/>{LinkCloseTag}{/block:PermalinkPage}
-
-{block:ifphotopermalinks1}
-<div class="permalinks">
-<ul class="buttons">
-<li><a href="{ReblogUrl}" target="_blank">{ReblogButton color="grey" size="16"}</a></li>
-<li>{LikeButton color="grey" size="16"}</li>
-<div class="noteslabel"><a href="{Permalink}">{NoteCount}</a></div>
-</ul>
-</div>{/block:ifphotopermalinks1}
-
-{block:ifphotopermalinks2}{block:indexpage}
-<ul class="reblog_me">
-<li>{ReblogButton color="grey"}</li><br>
-<li>{LikeButton color="grey"}</li>
-</ul>
-{/block:indexpage}{/block:ifphotopermalinks2}
-
-{/block:Photo}
-
-{block:Photoset}
-<center>
-<div class="photoset">
-{block:IndexPage}{Photoset-250}{/block:IndexPage}
-{block:PermalinkPage}{Photoset-500}{/block:PermalinkPage}
-</center>
-{block:ifphotopermalinks1}
-<div class="permalinks">
-<ul class="buttons">
-<li><a href="{ReblogUrl}" target="_blank">{ReblogButton color="grey" size="16"}</a></li>
-<li>{LikeButton color="grey" size="16"}</li>
-<div class="noteslabel"><a href="{Permalink}">{NoteCount}</a></div>
-</ul>
-</div>{/block:ifphotopermalinks1}
-
-{block:ifphotopermalinks2}{block:indexpage}
-<ul class="reblog_me">
-<li>{ReblogButton color="grey"}</li><br>
-<li>{LikeButton color="grey"}</li>
-</ul>
-{/block:indexpage}{/block:ifphotopermalinks2}
-{/block:Photoset}
-
-{block:Text}
-<div class="text"><div style="padding:10px;">
-<span class="title">{Title}</span>
-{Body}
-{block:IndexPage}
-<a href="{Permalink}"><div class="supreme">{NoteCountwithLabel}</div></a></div></div>
-{/block:IndexPage}
-{/block:Text}
-
-{block:Link}
-<div class="text"><div style="padding:10px;">
-<center><a href="{URL}"><span class="title">{Name}</span></a></center>
-<div style="margin-left:3px;">{block:Description}{Description}{/block:Description}</div>
-{block:IndexPage}
-<a href="{Permalink}"><div class="supreme">{NoteCountwithLabel}</div></a></div></div>
-{/block:IndexPage}
-{block:Link}
-
-{block:Quote}
-<div class="text"><div style="padding:10px;">
-<div style="margin-left:3px;">
-{Quote}</span>
-{block:Source}<strong>{Source}</strong>{/block:Source}
-</div>
-{block:IndexPage}
-<a href="{Permalink}"><div class="supreme">{NoteCountwithLabel}</div></a></div></div>
-{/block:IndexPage}
-{/block:Quote}
-
-{block:Chat}
-<div class="text"><div style="padding:10px;">
-<div style="margin-left:3px;">
-{block:Title}<span class="title">{title}</span>{/block:Title}
-<ul class="chat">
-{block:Lines}
-<li class="user_{UserNumber}">
-{block:Label}
-<span class="label">{Label}</span>
-{/block:Label}
-{Line}
-</li>
-{/block:Lines}
-</ul>
-</div>
-{block:IndexPage}
-<a href="{Permalink}"><div class="supreme">{NoteCountwithLabel}</div></a></div></div>
-{/block:IndexPage}
-{/block:Chat}
-
-{block:Audio}
-<div class="audio_text">
-{block:AlbumArt} <a href="{Permalink}"><img src="{AlbumArtURL}" alt="{PhotoAlt}" style="{block:indexpage}width:232px;height:232px;{/block:indexpage}{block:permalinkpage}width:450px;height:450px;{/block:permalinkpage}"/>
-{/block:AlbumArt}
-<div style="margin-top:-4px;background-color:black;height:30px;padding-top:7px;padding-bottom:5px;
-{block:indexpage}width:232px;{/block:indexpage}">
-{AudioPlayerBlack}</div></center>
-{/block:Audio}
-
-{block:Answer}
-<div class="text"><div style="padding:10px;">
-<b>Q</b>: {Question}<br>{Answer}<br><i>asked by {Asker}</i>
-{block:IndexPage}
-<a href="{Permalink}"><div class="supreme">{NoteCountwithLabel}</div></a>
-{/block:IndexPage}</div></div>{/block:Answer}
-
-{block:Video}
-{block:IndexPage}
-<div class="photoset">
-<center>
-{Video-250}</center>
-<a href="{Permalink}"><div class="supreme">{NoteCountwithLabel}</div></a>
-</div>
-{/block:IndexPage}
-{block:PermalinkPage}
-<center>
-{Video-500}</center>
-{/block:PermalinkPage}
-{block:Video}
-
-{block:PermalinkPage}
-{block:HasTags} &middot; {block:Tags}<a href="TagURL"> #{Tag}</a> {/block:Tags}{/block:hasTags}
-{/block:PermalinkPage}
-
-{block:PostNotes}
-<div class="notess">{block:Caption}{Caption}{/block:Caption}
-{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}
-<br>{PostNotes}</div>
-{/block:PostNotes}
-</div>
-</div>
-{/block:Posts}
-
-{block:Pagination}
-<div id="pagination">
-{block:NextPage}
-<a id="nextPage" href="{NextPage}"></a>
-{/block:NextPage}
-{block:PreviousPage}
-<a href="{PreviousPage}"></a>
-{/block:PreviousPage}
-</div>
-{/block:Pagination}
-{/block:IndexPage}
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+  </div>
 </div>
 
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I love photography</em></p>
+  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
+      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
 <script>
-window.onload = function () {
-document.body.insertAdjacentHTML( 'beforeEnd', '<iframe id="my-like-frame" style="display:none;"></iframe>' );
-document.addEventListener( 'click', function ( event ) {
-var myLikeLink = event.target;
-if( myLikeLink.className.indexOf( 'my-like' ) > -1 ) {
-var myLikeFrame = document.getElementById( 'my-like-frame' ),
-liked = ( myLikeLink.className == 'my-liked' ),
-command = liked ? 'unlike' : 'like',
-reblog = myLikeLink.getAttribute( 'data-reblog' ),
-postId = myLikeLink.getAttribute( 'data-id' ),
-oauth = reblog.slice( -8 ),
-likeUrl = 'http://www.tumblr.com/' + command + '/' + oauth + '?id=' + postId;
-myLikeFrame.src = likeUrl;
-liked ? myLikeLink.className = 'my-like'
-: myLikeLink.className = 'my-liked';
-};
-}, false );
-};
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
